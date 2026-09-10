@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "568258525832",
+    "project_id": "muheeb-backend-sky",
+    "storage_bucket": "muheeb-backend-sky.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568258525832:android:3142bf30fcd35a8c547d3d",
+        "android_client_info": {
+          "package_name": "com.example.skyz_islamabadz_backend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyOXFGJ8UMjJNovTUE1LsuZ8TODCf9OlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
