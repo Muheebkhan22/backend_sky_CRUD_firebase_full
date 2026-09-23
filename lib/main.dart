@@ -10,6 +10,8 @@ import 'package:skyz_islamabadz_backend/views/cityviews/cityViews/getAll_city.da
 import 'package:skyz_islamabadz_backend/views/cityviews/countryViews/getAll_country.dart';
 
 void main() async {
+
+  
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

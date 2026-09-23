@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:skyz_islamabadz_backend/provider/user.dart';
+import 'package:skyz_islamabadz_backend/services/auth.dart';
+import 'package:skyz_islamabadz_backend/views/auth/login.dart';
 import 'package:skyz_islamabadz_backend/views/profile/update_profile.dart';
 
 class GetProfile extends StatelessWidget {
@@ -33,7 +35,18 @@ class GetProfile extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => UpdateProfile()));
                       },
-                      child: Text("Edit Profile"))
+                      child: Text("Edit Profile")),
+                  ElevatedButton(
+                    child: Text("Logout"),
+                    onPressed: () async {
+                      await AuthService().logout().then((val) {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginScreen()));
+                      });
+                    },
+                  )
                 ],
               ));
   }
